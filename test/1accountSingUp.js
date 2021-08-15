@@ -7,12 +7,12 @@ let app = require('../src/index');
 
 // Testes de API ACCOUNTS - MONGODB
 
-describe('Teste 01 - /POST  Account já cadastrada', () => {
+describe('/POST  Account já cadastrada', () => {
   it('Account não encontra', (done) => {
     let body = {
-      email: "camilatabosc@gmail.com", 
+      email: "alex@gmail.com", 
       password: "123",
-      name: "Camila"
+      name: "Alex"
     };
     console.log(body)
     chai.request('http://localhost:9000')
@@ -25,7 +25,7 @@ describe('Teste 01 - /POST  Account já cadastrada', () => {
   });
 });
 
-describe('Teste 02 - /POST  Account inválida', () => {
+describe('/POST  Account inválida', () => {
   it('Account inválida', (done) => {
     let body = {
       email: "teste", 
@@ -43,7 +43,7 @@ describe('Teste 02 - /POST  Account inválida', () => {
   });
 });
 
-describe('Teste 03 - /POST  Account cadastrada', () => {
+describe('/POST  Account cadastrada', () => {
   it('Account encontrada', (done) => {
     let body = {
       email: "teste@gmail.com", 

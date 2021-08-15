@@ -7,7 +7,7 @@
     "start": "nodemon src/index.js",
     "test": "mocha --timeout 100000"
   },
-  "author": "Alex Miller",
+  "author": "Camila Taborda",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
